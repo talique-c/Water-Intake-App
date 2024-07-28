@@ -1,8 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* LAYOUT */
+* {
+  font-size: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: white; 
+  border-radius: 8px; 
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 2em;
+}
+
+/* Labels */
+.label-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+}
+
+/* Button */
+#waterIntakeButton {
+  margin-top: 2.5em;
+}
+
+/* TEXT */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Noto Serif Display", serif;
+  text-decoration: underline;
+  text-align: center;
+  color: #00496D;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center > label {
+  margin: 0 1em;
 }

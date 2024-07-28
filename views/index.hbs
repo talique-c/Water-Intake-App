@@ -1,2 +1,49 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<form class="form-container container">
+    <p>Sex:</p>
+    <div class="form-group">
+        <div class="form-check form-check-inline center">
+            <div class="label-vertical">
+                <img src="/images/male.png" alt="male icon">
+                <label for="male">Male</label>
+                <input type="radio" name="maleOrFemale" value="male" checked>
+            </div>
+        </div>
+        <div class="form-check form-check-inline">
+            <div class="label-vertical">
+                <img src="/images/female.png" alt="male icon">
+                <label for="male">Female</label>
+                <input type="radio" name="maleOrFemale" value="male" checked>
+            </div>
+        </div>
+    </div>
+
+<p>Weight:</p>
+    <div class="form-group">
+        <div class="input-group form-inline">
+            <div class="input-group-text" id="lbsOrKg">kg</div>
+            <input type="text" id="lbsOrKg" class="form-control" placeholder="Enter weight here" aria-label="Input group example">
+                <label for=""></label>
+        </div>
+
+        <div class="form-check form-switch form-check-inline text-center">
+            <input class="form-check-input" type="checkbox" id="lbsSwitch">
+            <label class="form-check-label" for="lbsSwitch">Change to pounds</label>
+        </div>
+    </div>
+
+        <p>Choose the option that matches your climate the best.</p>
+        <div class="form-floating">
+            
+            <select class="form-select" id="climateLevel" aria-label="Climate Level Selection Menu:">
+                <option selected>Choose Climate Type:</option>
+                <option value="hot">☀️ Hot</option>
+                <option value="mild">⛅ Mild</option>
+                <option value="cold">☃️ Cold</option>
+            </select>
+            <label for="climateLevel">Climate Type:</label>
+        </div>
+
+        <button id="waterIntakeButton" type="button" class="btn btn-primary btn-lg">Show My Daily Water Intake</button>
+</form>
+<script src="/javascripts/calculator.js" type="text/javascript"></script>
