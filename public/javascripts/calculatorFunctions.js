@@ -1,5 +1,9 @@
 // Calculate water intake
 export function calculateWaterIntake(weight, climate, sex) {
+    if (isNaN(weight) || weight <= 0 || climate <= 0 || sex <= 0) {
+        return 0;
+    }
+
     let waterIntake;
     waterIntake = weight * 30;
 
@@ -14,8 +18,7 @@ export function calculateWaterIntake(weight, climate, sex) {
             waterIntake += 125;
             break;
         default:
-            waterIntake += 0;
-            break;
+            return 0;
     }
 
     switch (sex) {
@@ -26,8 +29,7 @@ export function calculateWaterIntake(weight, climate, sex) {
             waterIntake += 0;
             break;
             default:
-                waterIntake += 0;
-                break;
+                return 0;
     }
     return Number(waterIntake);
 }
