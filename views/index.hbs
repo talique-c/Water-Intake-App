@@ -1,41 +1,44 @@
 <h1>{{title}}</h1>
-<form class="form-container container">
-    <p>Sex:</p>
-    <div class="form-group">
-        <div class="form-check form-check-inline center">
-            <div class="label-vertical">
-                <img src="/images/male.png" alt="male icon">
-                <label for="male">Male</label>
-                <input type="radio" name="maleOrFemale" value="male" checked>
-            </div>
-        </div>
-        <div class="form-check form-check-inline">
-            <div class="label-vertical">
-                <img src="/images/female.png" alt="male icon">
-                <label for="male">Female</label>
-                <input type="radio" name="maleOrFemale" value="male" checked>
-            </div>
-        </div>
-    </div>
 
-<p>Weight:</p>
-    <div class="form-group">
-        <div class="input-group form-inline">
-            <div class="input-group-text" id="weightInput">kg</div>
-            <input type="text" id="weightInput" class="form-control" placeholder="Enter weight here" aria-label="Input group example">
+<body>
+    <form class="form-container container">
+        <p>Sex:</p>
+        <div class="form-group">
+            <div class="form-check form-check-inline center">
+                <div class="label-vertical">
+                    <img src="/images/male.png" alt="male icon">
+                    <label for="male">Male</label>
+                    <input type="radio" name="maleOrFemale" value="male" checked>
+                </div>
+            </div>
+            <div class="form-check form-check-inline">
+                <div class="label-vertical">
+                    <img src="/images/female.png" alt="male icon">
+                    <label for="male">Female</label>
+                    <input type="radio" name="maleOrFemale" value="male" checked>
+                </div>
+            </div>
+        </div>
+
+        <p>Weight:</p>
+        <div class="form-group">
+            <div class="input-group form-inline">
+                <div class="input-group-text">kg</div>
+                <input type="text" id="weightInput" class="form-control" placeholder="Enter weight here"
+                    aria-label="Input group example">
                 {{!-- <label for="weightInput">test</label> --}}
-        </div>
-        <p id="weightValidation"></p>
+            </div>
+            <p id="weightValidation"></p>
 
-        {{!-- <div class="form-check form-switch form-check-inline text-center">
-            <input class="form-check-input" type="checkbox" id="lbsSwitch">
-            <label class="form-check-label" for="lbsSwitch">Change to pounds</label>
-        </div> --}}
-    </div>
+            {{!-- <div class="form-check form-switch form-check-inline text-center">
+                <input class="form-check-input" type="checkbox" id="lbsSwitch">
+                <label class="form-check-label" for="lbsSwitch">Change to pounds</label>
+            </div> --}}
+        </div>
 
         <p>Choose the option that matches your climate the best.</p>
         <div class="form-floating">
-            
+
             <select class="form-select" id="climateLevel" aria-label="Climate Level Selection Menu:">
                 <option selected>Choose Climate Type:</option>
                 <option value="hot">☀️ Hot</option>
@@ -47,5 +50,6 @@
 
         <button id="waterIntakeButton" type="button" class="btn btn-primary btn-lg">Show My Daily Water Intake</button>
         <h2></h2>
-</form>
-<script type="module" src="/javascripts/calculator.js" type="text/javascript"></script>
+    </form>
+    <script type="module" src="/javascripts/calculator.js"></script>
+</body>

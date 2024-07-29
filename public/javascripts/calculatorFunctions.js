@@ -1,14 +1,34 @@
+// Calculate water intake
 export function calculateWaterIntake(weight, climate, sex) {
-    let waterIntake = weight * 30;
+    let waterIntake;
+    waterIntake = weight * 30;
 
-    if (climate === 'hot') {
-        waterIntake += 500; 
-    } else if (climate === 'mild') {
-        waterIntake += 250; 
+    switch (climate) {
+        case 'hot':
+            waterIntake += 500;
+            break;
+        case 'mild':
+            waterIntake += 250;
+            break;
+        case 'cold':
+            waterIntake += 125;
+            break;
+        default:
+            waterIntake += 0;
+            break;
     }
 
-    if (sex === 'male') {
-        waterIntake += 500; 
+    switch (sex) {
+        case 'male':
+            waterIntake += 240;
+            break;
+        case 'female':
+            waterIntake += 0;
+            break;
+            default:
+                waterIntake += 0;
+                break;
     }
-
+    return Number(waterIntake);
 }
+export default calculateWaterIntake;

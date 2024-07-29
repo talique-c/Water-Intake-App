@@ -1,4 +1,5 @@
-import totalCaloriesBurned from "./calculatorFunctions";
+// Tests
+import calculateWaterIntake from "./calculatorFunctions.js";
 
 describe('Calorie Burn Calculator', () => {
     test('should return 0 for negative weight', () => {
